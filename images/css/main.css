@@ -4,10 +4,8 @@
     padding: 0 15px;
 }
 
-
-
 .header {
-    border-bottom: 1px solid #fb4357;
+    border-bottom: 2px solid #fb4357;
 }
 
 .header a {
@@ -31,11 +29,6 @@
     /* flex-flow: row nowrap; */
     align-items: flex-end;
     height: 53px;
-    gap: 10px;
-}
-
-.header_content h1 span {
-    letter-spacing: 10px
 }
 
 .header .header_content h1 img {
@@ -164,10 +157,9 @@
 }
 
 .main_visual .video_tit h2 {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 700;
-    margin: 0 0 15px 0;
-    line-height: 1.4;
+    margin: 0 0 20px 0;
 }
 
 .main_visual .video_tit p {
@@ -201,7 +193,6 @@
     padding: 100px 0;
     background: linear-gradient(#fff 50%, #f9f9f9 50%);
     position: relative;
-
 }
 
 .movie_chart .inner .tit {
@@ -219,17 +210,17 @@
 .movie_chart .tit a {
     border: 1px solid #ddd;
     border-radius: 20px;
-    padding: 5px 10px 4px 14px;
+    padding: 4px 10px 4px 14px;
 }
 
 .chart_slide {
     margin: 0 -15px;
-    counter-reset: title;
+
 }
 
 .chart_slide .itm {
     padding: 0 15px;
-    counter-increment: title;
+
 }
 
 .chart_slide .itm img {
@@ -239,8 +230,8 @@
 
 .chart_slide .itm figure {
     position: relative;
+    flex: 1;
     overflow: hidden;
-
 }
 
 /* opacitiy는 글자까지 투명해지기 때문에 사용x */
@@ -253,8 +244,6 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
     /* 아래쪽 방향 배치 */
     border-radius: 10px;
@@ -265,15 +254,15 @@
 }
 
 .chart_slide .cover_btn a {
-    background: #444;
-    color: #fff;
-    font-size: 15px;
-    padding: 15px 40px;
+    background: #fff;
+    color: #fb4357;
+    padding: 10px 20px;
     border-radius: 5px;
     /*flex 때문에 쭉 늘어나면 align-self 사용(자기 자신한테 줌) */
-    /* align-self: flex-start; */
+    align-self: flex-start;
 
-    transition: 0.5s;
+
+
 
 }
 
@@ -286,64 +275,14 @@
     inset: 0 auto auto 0;
 }
 
-.chart_slide figure .box::before {
-    content: "";
-    width: 100%;
-    height: 40px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 0 0 10px 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    visibility: visible;
+.chart_slide figcaption {
+    margin: 20px 0 0 0;
 }
 
-.chart_slide figure:hover .box::before {
-    visibility: hidden;
-}
-
-.chart_slide figure .box::after {
-    content: counter(title)"";
-    display: inline-block;
-    text-align: center;
-    line-height: 1.2;
-    color: #fff;
-    font-size: 40px;
-    font-weight: 900;
-    position: absolute;
-    bottom: 10px;
-    left: 5%;
-    visibility: visible;
-}
-
-.chart_slide figure:hover .box::after {
-    visibility: hidden;
-}
-
-
-
-.chart_slide strong {
+.chart_slide figcaption strong {
     display: block;
     font-size: 20px;
-    font-weight: 500;
-    margin: 20px 0 20px 0;
-    position: relative;
-
-}
-
-.chart_slide strong::after {
-    content: "";
-    width: 50px;
-    height: 2px;
-    background: #fb4357;
-    position: absolute;
-    top: 30px;
-    left: 0;
-}
-
-.chart_slide figcaption {
-    display: flex;
-    justify-content: space-between;
+    margin: 0 0 10px 0;
 }
 
 
@@ -351,7 +290,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -20px);
+    transform: translate(-50%, -50%);
     max-width: 1400px;
     width: 100%;
     cursor: pointer;
@@ -408,56 +347,4 @@
     height: 11px;
     background: #ccc;
     margin: 0 10px;
-}
-
-.to_top {
-    position: fixed;
-    bottom: 0;
-    right: 100px;
-    z-index: 999;
-
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s;
-}
-
-/* opacitiy는 기능은 남아있기 때문에 visibility로 기능 지움 display: none 은 transition(animation) 안먹음 */
-.to_top.on {
-    visibility: visible;
-    opacity: 1;
-    bottom: 120px;
-}
-
-.to_top i {
-    color: #444;
-    background: transparent;
-    padding: 14px;
-    border-radius: 50%;
-    font-size: 20px;
-    font-weight: 300;
-    border: 1px solid #666;
-    cursor: pointer;
-}
-
-.to_go {
-    position: fixed;
-    bottom: 120px;
-    right: 100px;
-    z-index: 999;
-
-    font-size: 14px;
-    color: #fff;
-    background-image: linear-gradient(to left, rgb(255, 115, 86), rgb(251, 67, 87));
-    padding: 18px 36px;
-    border-radius: 30px;
-
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s 0.5s;
-}
-
-.to_go.on {
-    visibility: visible;
-    opacity: 1;
-    right: 160px;
 }
