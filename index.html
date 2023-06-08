@@ -6,28 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/main.css">
 
     <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
-
-
 </head>
 
 <body>
     <div class="wrap">
         <header class="header">
-            <div class="inner">
+
+            <div class="header_content">
+                <div class="inner">
+                    <h1><a href=""><img src="./images/logoRed.png" alt=""></a>
+                        <span>CULTUREPLEX</span>
+                    </h1>
+                    <div class="member_info">
+                        <ul>
+                            <li><a href=""><i class="xi-lock-o"></i></a></li>
+                            <li><a href=""><i class="xi-user-plus-o"></i></a></li>
+                            <li><a href=""><i class="xi-profile-o"></i></a></li>
+                            <li><a href=""><i class="xi-headset"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="gnb_menu inner">
                 <nav class="gnb">
                     <ul>
                         <li class="on">
                             <a href="">영화</a>
                             <ul class="sub">
-                                <li><a href="">영화</a></li>
                                 <li><a href="">무비차트</a></li>
                                 <li><a href="">아트하우스</a></li>
                                 <li><a href="">ICECON</a></li>
@@ -35,14 +51,12 @@
                         </li>
                         <li><a href="">극장</a>
                             <ul class="sub">
-                                <li><a href="">극장</a></li>
                                 <li><a href="">CGV 극장</a></li>
                                 <li><a href="">특별관</a></li>
                             </ul>
                         </li>
                         <li><a href="">예매</a>
                             <ul class="sub">
-                                <li><a href="">예매</a></li>
                                 <li><a href="">빠른예매</a></li>
                                 <li><a href="">상영스케줄</a></li>
                                 <li><a href="">English Ticketing</a></li>
@@ -51,7 +65,6 @@
                         </li>
                         <li><a href="">스토어</a>
                             <ul class="sub">
-                                <li><a href="">스토어</a></li>
                                 <li><a href="">패키지</a></li>
                                 <li><a href="">영화관람권</a></li>
                                 <li><a href="">기프트카드</a></li>
@@ -65,7 +78,6 @@
                         </li>
                         <li><a href="">이벤트</a>
                             <ul class="sub">
-                                <li><a href="">이벤트</a></li>
                                 <li><a href="">SPECIAL</a></li>
                                 <li><a href="">영화/예매</a></li>
                                 <li><a href="">멤버십/CLUB</a></li>
@@ -77,7 +89,6 @@
                         </li>
                         <li><a href="">혜택</a>
                             <ul class="sub">
-                                <li><a href="">혜택</a></li>
                                 <li><a href="">CGV 할인정보</a></li>
                                 <li><a href="">CLUB 서비스</a></li>
                                 <li><a href="">VIP 라운지</a></li>
@@ -85,186 +96,220 @@
                         </li>
                     </ul>
                 </nav>
+
+                <a href=""><i class="xi-search"></i></a>
+
             </div>
+
         </header>
         <main>
-            <div class="main_video">
-
-            </div>
-
-            <div class="main_content">
+            <section class="main_visual">
+                <div class="video_tit">
+                    <h2>스파이더맨: <br>어크로스 더 유니버스</h2>
+                    <p>북미 박스오피스 압도적 1위! <br>
+                        6월 21일, 스파이더맨이 온다</p>
+                </div>
+                <div class="main_video">
+                    <div id="bg_video" class="player">
+                        My video</div>
+                    <div class="ctr">
+                        <i class="xi-pause pause"></i>
+                        <i class="xi-play play"></i>
+                    </div>
+                </div>
+            </section>
+            <section class="movie_chart">
                 <div class="inner">
                     <div class="tit">
                         <h2>무비차트</h2>
-                        <p>상영예정작</p>
-                        <a href="">전체보기</a>
+                        <a href="">전체보기 <i class="xi-angle-right-min"></i></a>
                     </div>
-                    <div class="itm">
-                        <figure>
-                            <div class="box">
-                                <img src="./images/movie1.jpg" alt="">
-                            </div>
-                            <div class="cover_btn">
-                                <a href="#!">상세보기</a>
-                                <a href="#!">예매하기</a>
-                            </div>
-                        </figure>
-                        <figcaption>
-                            <strong>범죄도시3</strong>
-                            <span>95%</span>
-                            <span>예매율 37.7%</span>
-                        </figcaption>
+                    <div class="chart_slide">
+                        <div class="itm">
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/movie1.jpg" alt="">
+                                </div>
+                                <div class="cover_btn">
+                                    <a href="#!">상세보기</a>
+                                    <a href="#!">예매하기</a>
+                                </div>
+                            </figure>
+                            <figcaption>
+                                <strong>범죄도시3</strong>
+                                <span>95%</span>
+                                <span>예매율 37.7%</span>
+                            </figcaption>
+                        </div>
+                        <div class="itm">
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/movie2.jpg" alt="">
+                                </div>
+                                <div class="cover_btn">
+                                    <a href="#!">상세보기</a>
+                                    <a href="#!">예매하기</a>
+                                </div>
+                            </figure>
+                            <figcaption>
+                                <strong>플래시</strong>
+                                <span>99%</span>
+                                <span>예매율 19.2%</span>
+                            </figcaption>
+                        </div>
+                        <div class="itm">
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/movie3.jpg" alt="">
+                                </div>
+                                <div class="cover_btn">
+                                    <a href="#!">상세보기</a>
+                                    <a href="#!">예매하기</a>
+                                </div>
+                            </figure>
+                            <figcaption>
+                                <strong>트랜스포머-비스트의 서막</strong>
+                                <span>86%</span>
+                                <span>예매율 14.0%</span>
+                            </figcaption>
+                        </div>
+                        <div class="itm">
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/movie4.jpg" alt="">
+                                </div>
+                                <div class="cover_btn">
+                                    <a href="#!">상세보기</a>
+                                    <a href="#!">예매하기</a>
+                                </div>
+                            </figure>
+                            <figcaption>
+                                <strong>엘리멘탈</strong>
+                                <span>99%</span>
+                                <span>예매율 6.8%</span>
+                            </figcaption>
+                        </div>
+                        <div class="itm">
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/movie5.jpg" alt="">
+                                </div>
+                                <div class="cover_btn">
+                                    <a href="#!">상세보기</a>
+                                    <a href="#!">예매하기</a>
+                                </div>
+                            </figure>
+                            <figcaption>
+                                <strong>극장판 포켓몬스터 DP</strong>
+                                <span>96%</span>
+                                <span>예매율 3.9%</span>
+                            </figcaption>
+                        </div>
+                        <div class="itm">
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/movie6.jpg" alt="">
+                                </div>
+                                <div class="cover_btn">
+                                    <a href="#!">상세보기</a>
+                                    <a href="#!">예매하기</a>
+                                </div>
+                            </figure>
+                            <figcaption>
+                                <strong>그 여름</strong>
+                                <span>79%</span>
+                                <span>예매율 3.4%</span>
+                            </figcaption>
+                        </div>
+                        <div class="itm">
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/movie7.jpg" alt="">
+                                </div>
+                                <div class="cover_btn">
+                                    <a href="#!">상세보기</a>
+                                    <a href="#!">예매하기</a>
+                                </div>
+                            </figure>
+                            <figcaption>
+                                <strong>가디언즈 오브 갤럭시 - Volume 3</strong>
+                                <span>98%</span>
+                                <span>예매율 1.6%</span>
+                            </figcaption>
+                        </div>
+                        <div class="itm">
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/movie8.jpg" alt="">
+                                </div>
+                                <div class="cover_btn">
+                                    <a href="#!">상세보기</a>
+                                    <a href="#!">예매하기</a>
+                                </div>
+                            </figure>
+                            <figcaption>
+                                <strong>메이플스토리 2023</strong>
+                                <span>91%</span>
+                                <span>예매율 1.2%</span>
+                            </figcaption>
+                        </div>
+                        <div class="itm">
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/movie9.jpg" alt="">
+                                </div>
+                                <div class="cover_btn">
+                                    <a href="#!">상세보기</a>
+                                    <a href="#!">예매하기</a>
+                                </div>
+                            </figure>
+                            <figcaption>
+                                <strong>탑건</strong>
+                                <span>99%</span>
+                                <span>예매율 1.1%</span>
+                            </figcaption>
+                        </div>
+                        <div class="itm">
+                            <figure>
+                                <div class="box">
+                                    <img src="./images/movie10.jpg" alt="">
+                                </div>
+                                <div class="cover_btn">
+                                    <a href="#!">상세보기</a>
+                                    <a href="#!">예매하기</a>
+                                </div>
+                            </figure>
+                            <figcaption>
+                                <strong>매그놀리아</strong>
+                                <span>93%</span>
+                                <span>예매율 0.9%</span>
+                            </figcaption>
+                        </div>
                     </div>
-                    <div class="itm">
-                        <figure>
-                            <div class="box">
-                                <img src="./images/movie2.jpg" alt="">
-                            </div>
-                            <div class="cover_btn">
-                                <a href="#!">상세보기</a>
-                                <a href="#!">예매하기</a>
-                            </div>
-                        </figure>
-                        <figcaption>
-                            <strong>범죄도시3</strong>
-                            <span>95%</span>
-                            <span>예매율 37.7%</span>
-                        </figcaption>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <div class="box">
-                                <img src="./images/movie3.jpg" alt="">
-                            </div>
-                            <div class="cover_btn">
-                                <a href="#!">상세보기</a>
-                                <a href="#!">예매하기</a>
-                            </div>
-                        </figure>
-                        <figcaption>
-                            <strong>범죄도시3</strong>
-                            <span>95%</span>
-                            <span>예매율 37.7%</span>
-                        </figcaption>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <div class="box">
-                                <img src="./images/movie4.jpg" alt="">
-                            </div>
-                            <div class="cover_btn">
-                                <a href="#!">상세보기</a>
-                                <a href="#!">예매하기</a>
-                            </div>
-                        </figure>
-                        <figcaption>
-                            <strong>범죄도시3</strong>
-                            <span>95%</span>
-                            <span>예매율 37.7%</span>
-                        </figcaption>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <div class="box">
-                                <img src="./images/movie5.jpg" alt="">
-                            </div>
-                            <div class="cover_btn">
-                                <a href="#!">상세보기</a>
-                                <a href="#!">예매하기</a>
-                            </div>
-                        </figure>
-                        <figcaption>
-                            <strong>범죄도시3</strong>
-                            <span>95%</span>
-                            <span>예매율 37.7%</span>
-                        </figcaption>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <div class="box">
-                                <img src="./images/movie6.jpg" alt="">
-                            </div>
-                            <div class="cover_btn">
-                                <a href="#!">상세보기</a>
-                                <a href="#!">예매하기</a>
-                            </div>
-                        </figure>
-                        <figcaption>
-                            <strong>범죄도시3</strong>
-                            <span>95%</span>
-                            <span>예매율 37.7%</span>
-                        </figcaption>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <div class="box">
-                                <img src="./images/movie7.jpg" alt="">
-                            </div>
-                            <div class="cover_btn">
-                                <a href="#!">상세보기</a>
-                                <a href="#!">예매하기</a>
-                            </div>
-                        </figure>
-                        <figcaption>
-                            <strong>범죄도시3</strong>
-                            <span>95%</span>
-                            <span>예매율 37.7%</span>
-                        </figcaption>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <div class="box">
-                                <img src="./images/movie8.jpg" alt="">
-                            </div>
-                            <div class="cover_btn">
-                                <a href="#!">상세보기</a>
-                                <a href="#!">예매하기</a>
-                            </div>
-                        </figure>
-                        <figcaption>
-                            <strong>범죄도시3</strong>
-                            <span>95%</span>
-                            <span>예매율 37.7%</span>
-                        </figcaption>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <div class="box">
-                                <img src="./images/movie9.jpg" alt="">
-                            </div>
-                            <div class="cover_btn">
-                                <a href="#!">상세보기</a>
-                                <a href="#!">예매하기</a>
-                            </div>
-                        </figure>
-                        <figcaption>
-                            <strong>범죄도시3</strong>
-                            <span>95%</span>
-                            <span>예매율 37.7%</span>
-                        </figcaption>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <div class="box">
-                                <img src="./images/movie10.jpg" alt="">
-                            </div>
-                            <div class="cover_btn">
-                                <a href="#!">상세보기</a>
-                                <a href="#!">예매하기</a>
-                            </div>
-                        </figure>
-                        <figcaption>
-                            <strong>범죄도시3</strong>
-                            <span>95%</span>
-                            <span>예매율 37.7%</span>
-                        </figcaption>
+                    <div class="arrows">
+                        <i class="xi-arrow-left left"></i>
+                        <i class="xi-arrow-right right"></i>
                     </div>
 
                 </div>
-            </div>
+            </section>
         </main>
+        <footer class="footer">
+            <h2 class="blind">고객지원</h2>
+            <div class="inner">
+                <address>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</address>
+                <ul class="footer_customer">
+                    <li>대표이사 : 허민회</li>
+                    <li>사업자등록번호 : 104-81-45690</li>
+                    <li><a href="tel: 051-331-3354" class="tel"> Tel : 051-331-3354</a></li>
+                    <li>대표이메일 : cjcgvmaster@cj.net</li>
+                </ul>
+                <div class="copy">
+                    &copy; CJ CGV. All Rights Reserved
+                </div>
+            </div>
+        </footer>
     </div>
-
 </body>
 
 </html>
